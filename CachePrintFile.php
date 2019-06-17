@@ -37,7 +37,8 @@ class CachePrintFile implements CacheInterface{
       $filename = $this->createFile($key);
 
       if (!file_exists($this->cacheDir))
-         mkdir($this->cacheDir, 0700);
+         if(!mkdir($this->cacheDir, 0700))
+            throw new Exception('Could not create folder cache. Insufficient rights.');
 
       if(!$f = fopen($filename, 'w')){
          throw new Exception('Could not write cache:');
