@@ -18,6 +18,9 @@ class CachePrintFile implements CacheInterface{
       $this->cacheDir = $cacheDir;
    }
 
+   /**
+     * @param string
+     */
    protected function createFile($key) {
       return $this->cacheDir . '/' . $key . '.dat';
    }
