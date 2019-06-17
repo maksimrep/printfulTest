@@ -1,0 +1,19 @@
+{
+    "name": "maksimrep/printtest",
+    "description": "Remote​ Technical Developer Task (v2)",
+    "type": "project",
+    "license": "free",
+    "authors": [
+        {
+            "name": "Maksim Rep",
+            "email": "maksimrep@yandex.ru"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "classmap": ["./"]
+    }
+}

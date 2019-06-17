@@ -1,0 +1,5 @@
+.idea
+.directory
+cache/*
+vendor
+.git
