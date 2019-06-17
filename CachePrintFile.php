@@ -13,7 +13,6 @@ class CachePrintFile implements CacheInterface{
 
    /**
      * @param string $cacheDir
-     * @param int $cachetime
      */
    public function __construct($cacheDir = '.') {
       $this->cacheDir = $cacheDir;
